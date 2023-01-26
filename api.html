@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SkiveAPI</title>
+    <title>SkiveAPI</title
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
     <style>
       /* CSS styles for the layout and design of the webpage */
       body {
@@ -11,7 +14,7 @@
         padding: 0;
       }
 
-      #container {
+      #containera {
         width: 80%;
         margin: 0 auto;
         background-color: #fff;
@@ -67,10 +70,36 @@
         color: blue;
         text-decoration: underline;
       }
+      #container {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+      }
+
+      /* Styles for the code container */
+      #code-container {
+        width: 100%;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+        margin-top: 40px;
+      }
+
+      pre {
+        margin: 0;
+      }
+
+      code {
+        background-color: transparent;
+      }
     </style>
   </head>
   <body>
-    <div id="container">
+    <div id="containera">
       <div id="input-container">
         <p>Made by robloxskive</p>
         <h1>SkiveAPI</h1>
@@ -88,9 +117,18 @@
       <div id="docs">
         <p>Setup SkiveAPI with http requests!</p>
         <p>The easy method:</p>
-<div id="output-container">
-        <p id="output">W</p>
-      </div>
+    <div id="code-container">
+      <pre>
+        <code class="lua">
+-- This is a sample Lua code
+function add(a, b)
+  return a + b
+end
+
+print(add(1, 2))
+        </code>
+      </pre>
+    </div>
       </div>
     </div>
   </body>
