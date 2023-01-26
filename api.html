@@ -42,23 +42,48 @@
         border-radius: 5px;
         margin-top: 20px;
       }
+
+      /* Styles for the documentation section */
+      #docs-container {
+        width: 80%;
+        margin: 40px auto;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #docs {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      a {
+        color: blue;
+        text-decoration: underline;
+      }
     </style>
   </head>
   <body>
     <div id="container">
       <div id="input-container">
-        <h1>SkiveAPI</h1>
-        <p>Sorry but you dont have accsess to SkiveAPI Docs!</p>
+        <input type="text" id="input" placeholder="Enter your text here...">
       </div>
       <div id="output-container">
-        <p id="output">Made by robloxskive</p>
+        <p id="output"></p>
+      </div>
+    </div>
+    <div id="docs-container">
+      <h1>Documentation</h1>
+      <div id="docs">
+        <p>Welcome to the documentation section for the OpenAI GPT-3 model. Here, you will find information on how to use the model and its capabilities.</p>
+        <p>For more information on GPT-3, please visit the <a href="https://openai.com/docs/models/gpt-3/">OpenAI GPT-3 documentation</a>.</p>
       </div>
     </div>
   </body>
 </html>
-
-<script>
-console.log("[SkiveAPI]: Welcome")
-
-console.log("[SkiveAPI]: We are working on the Docs ATM")
-</script>
