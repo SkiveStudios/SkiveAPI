@@ -121,24 +121,26 @@
     </div>
     <div id="docs-container">
 
-      <p>Last updated: 20-01-2023 by robloxskive</p>
       <h1>Setup</h1>
-      <div id="docs">
-        <p>Setup SkiveAPI with http requests!</p>
-        <p>The easy method:</p>
-      </div>
     </div>
 <div id="parent-container">
     <div id="container">
+      <p>This is the orignal way of printing each player</p>
       <pre>
         <code class="lua">
--- This is a sample Lua code
-function add(a, b)
-  return a + b
-end
-
-print(add(1, 2))
+        local players = game:GetService("Players"):GetPlayers()
+        for i = 1,#players do
+        print("[SkiveAPI]: "..players[i].." ("..i..")")
+        end
         </code>
+      </pre>
+      <p>This is using SkiveAPI</p>
+      <pre>
+      <code class="lua">
+      local skiveAPI = require(game:GetService("ReplicatedStorage"):WaitForChild("SkiveAPI"):WaitForChild("main"))
+      local players = game:GetService("Players"):GetPlayers()
+      skiveAPI.Print(#players)
+      </code>
       </pre>
     </div>
 </div>
