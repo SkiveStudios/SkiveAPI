@@ -111,14 +111,12 @@
     <div id="containera">
       <h1>SkiveAPI Requests</h1>
       <p id="requests">Requests: 0</p>
-      <div id="output-container">
-        <p id="output"></p>
-      </div>
     </div>
+    <p></p>
 <div id="parent-container">
   <h1>Max Requests</h1>
     <div id="container">
-      <p>Limit: 100 Requests</p>
+      <p>Limit: </p><p id="limit"></p>
     </div>
 </div>
   </body>
@@ -126,9 +124,11 @@
   
   
   <script>
+let limit = 100;
 let i = 0;
  while (i < 99999) {
   document.getElementById("requests").innerHTML = i;
   i++;
 }
+doucment.getElementById("limit").innerHTML = limit;
   </script>
