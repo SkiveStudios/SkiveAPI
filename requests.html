@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SkiveAPI - Requests</title
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+      /* CSS styles for the layout and design of the webpage */
+      body {
+        background-color: #f3f3f3;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      #containera {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+      }
+
+      #input-container {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      #input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 5px #ccc;
+      }
+
+      #output-container {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: #363636;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+
+      /* Styles for the documentation section */
+      #docs-container {
+        width: 80%;
+        margin: 40px auto;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #docs {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      a {
+        color: blue;
+        text-decoration: underline;
+      }
+      #container {
+        width: 80%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+      }
+
+      /* Styles for the code container */
+      #code-container {
+        width: 100%;
+        background-color: #949494;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #ccc;
+        margin-top: 40px;
+      }
+
+      pre {
+        margin: 0;
+      }
+
+      code {
+        background-color: transparent;
+      }
+#parent-container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="containera">
+      <h1>SkiveAPI Requests</h1>
+      <p id="requests">Requests: 0</p>
+      <div id="output-container">
+        <p id="output"></p>
+      </div>
+    </div>
+    <div id="docs-container">
+      <h1>Setup</h1>
+      <div id="docs">
+        <p>How to setup SkiveAPI?</p>
+        <p>We got you!</p>
+      </div>
+    </div>
+<div id="parent-container">
+  <h1>Max Requests</h1>
+    <div id="container">
+      <p>Limit: 100 Requests</p>
+    </div>
+</div>
+  </body>
+</html>
+  
+  
+  <script>
+  function GetRequests() {
+  const numberElement = document.getElementById("requests");
+  const number = parseInt(numberElement.innerText, 10) + 1;
+  numberElement.innerText = number;
+  }
+    
+ for (let i = 0; i < 18827; i++) {
+  const numberElement = document.getElementById("requests");
+  numberElement.innerText = i;
+}
+  </script>
