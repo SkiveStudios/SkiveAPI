@@ -133,14 +133,9 @@
   
   
   <script>
-  function GetRequests() {
-  const numberElement = document.getElementById("requests");
-  const number = parseInt(numberElement.innerText, 10) + 1;
-  numberElement.innerText = number;
-  }
-    
- for (let i = 0; i < 18827; i++) {
-  const numberElement = document.getElementById("requests");
-  numberElement.innerText = i;
+let i = 0;
+ while (i < 99999) {
+  document.getElementById("requests").innerHTML = i;
+  i++;
 }
   </script>
